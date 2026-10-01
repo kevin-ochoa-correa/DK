@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DKtechnology</title>
+<link rel="stylesheet" href="estilos.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="cabecera">
+  <div class="contenedor cabecera-caja">
+    <a href="#inicio" class="marca">
+      <span class="marca-sello"><img src="img/logo.jpeg" alt=""></span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navPrincipal">menú</button>
+
+    <nav class="nav" id="navPrincipal" aria-label="Navegación principal">
+      <a href="#inicio">inicio</a>
+      <a href="#proposito">misión &amp; visión</a>
+      <a href="#nosotros">nosotros</a>
+      <a href="#servicios">servicios</a>
+      <a href="#contacto" class="nav-cta">Contáctenos</a>
+    </nav>
+  </div>
+</header>
+<!-- ===================== HERO ===================== -->
+<main>
+  <section class="hero" id="inicio">
+    <div class="contenedor hero-caja">
+      <div>
+        <p class="hero-marca"><span class="punto"></span> Software de alto impacto para mentes visionarias.</p>
+        <h1>innovación que <span class="subrayado">define</span> el mañana.</h1>
+        <div class="acciones">
+          <a href="#contacto" class="boton boton--lleno">Hablemos de su proyecto</a>
+          <a href="#servicios" class="boton boton--linea">Ver servicios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 2. MISIÓN Y VISIÓN ===================== -->
+  <section class="seccion" id="proposito">
+    <div class="contenedor">
+      <p class="etiqueta">Nuestro propósito</p>
+      <h2 class="titulo">Por qué existimos y hacia dónde vamos</h2>
+
+      <div class="rejilla-2">
+        <article class="tarjeta tarjeta--tinta">
+          <span class="tarjeta-regla"></span>
+          <p class="tarjeta-clave">Misión</p>
+          <h3>Poner en producción software que el cliente pueda mantener.</h3>
+          <p>Diseñamos y desarrollamos soluciones digitales innovadoras que impulsan el crecimiento de nuestros clientes, ofreciendo software de alta calidad, accesible y adaptado a cada necesidad.</p>
+        </article>
+
+        <article class="tarjeta tarjeta--tinta">
+          <span class="tarjeta-regla"></span>
+          <p class="tarjeta-clave">Visión</p>
+          <h3>Ser el estudio al que se llama cuando el sistema tiene que funcionar.</h3>
+          <p>Ser líderes en el sector tecnológico, reconocidos por la creatividad, innovación y confianza, transformando ideas en realidades digitales con impacto nacional e internacional para el año 2030.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 3. SOBRE NOSOTROS ===================== -->
+  <section class="seccion" id="nosotros" style="background:var(--papel-2);">
+    <div class="contenedor nosotros-caja">
+      <h2 class="titulo">sobre nosotros</h2>
+
+      <div class="cuadro-fotos">
+        <div class="fotos">
+          <figure class="foto">
+            <div class="marco"><img src="img/kevin.jpeg" alt="Retrato del primer integrante del equipo"></div>
+            <figcaption>
+              <b>Kevin Ochoa</b>
+              <span></span>
+            </figcaption>
+          </figure>
+          <figure class="foto">
+            <div class="marco"><img src="img/Dilan.jpeg" alt="Retrato del segundo integrante del equipo"></div>
+            <figcaption>
+              <b>Dilan Ramirez</b>
+              <span></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 4. CARRUSEL DE SERVICIOS ===================== -->
+  <section class="seccion seccion--oscura" id="servicios">
+    <div class="contenedor">
+      <div class="carrusel-tope">
+        <div>
+          <p class="etiqueta">Servicios</p>
+        </div>
+        <div class="flechas">
+          <button class="flecha" id="anterior" aria-label="Servicio anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button class="flecha" id="siguiente" aria-label="Servicio siguiente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="visor" id="visor" tabindex="0" role="region" aria-label="Carrusel de servicios">
+        <div class="pista" id="pista">
+
+          <div class="grupo">
+            <article class="servicio">
+                <h3>IA & Futuro</h3>
+                <p>Implementación de inteligencia artificial avanzada para optimizar procesos industriales.</p>
+              <div class="fichas"></div>
+            </article>
+
+            <article class="servicio">
+              <h3>Aplicaciones móviles</h3>
+              <p>paginas adaptables a cualquier dispositivo electronico incluyendo portatiles, tablets, celulares y computadores.</p>
+              <div class="fichas"><span class="ficha">iOS + Android</span></div>
+            </article>
+          </div>
+
+          <div class="grupo">
+            <article class="servicio">
+              <h3>Arquitectura</h3>
+              <p>Diseño de sistemas robustos y escalables con los más altos estándares de seguridad.</p>
+              <div class="fichas"></div>
+            </article>
+
+            <article class="servicio">
+               <h3>Desarrollo</h3>
+              <p>Software a medida enfocado en la experiencia del usuario y alto rendimiento.</p>
+              <div class="fichas"></div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="puntos" id="puntos"></div>
+    </div>
+  </section>
+
+  <!-- ===================== 5. CONTACTO ===================== -->
+  <section class="seccion" id="contacto">
+    <div class="contenedor contacto-caja">
+      <form class="formulario" id="formulario" novalidate>
+        <div class="campos">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="María Restrepo" required>
+          </div>
+          <div class="campo">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Distribuidora Andina">
+          </div>
+          <div class="campo">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" placeholder="maria@empresa.com" required>
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000">
+          </div>
+          <div class="campo campo--ancho">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio">
+              <option>Software a la medida</option>
+              <option>Aplicaciones móviles</option>
+              <option>Integraciones y APIs</option>
+              <option>Nube e infraestructura</option>
+              <option>Todavía no lo tengo claro</option>
+            </select>
+          </div>
+          <div class="campo campo--ancho">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Describa el problema, el plazo que tiene en mente y quién lo usaría." required></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="enviar">Enviar mensaje</button>
+        <p class="aviso" id="aviso" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-rejilla">
+      <div>
+        <a href="#inicio" class="marca">
+      <span class="marca-sello"><img src="img/logo.jpeg" alt=""></span>
+    </a>
+        <p style="max-width:34ch; margin:0;">soluciones tecnologicas para empresas medianas y pequeñas.</p>
+      </div>
+      <div>
+        <h4>Página</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proposito">Misión y visión</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">IA & Futuro</a></li>
+          <li><a href="#servicios">Aplicaciones móviles</a></li>
+          <li><a href="#servicios">Arquitectura</a></li>
+          <li><a href="#servicios">Desarrollo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@nodosur.co">kevinparker596@gmail.com</a></li>
+          <li><a href="tel:+5716000000">+57 3004952023</a></li>
+          <li>Dg. 70 Sur #5611, Bogotá</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie-linea">
+      <span>© 2026 DK technology — Todos los derechos reservados</span>
+      <span>Política de privacidad · Términos de servicio</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== MODAL DEL LOGO ===================== -->
+<dialog class="modal" id="modalLogo" aria-labelledby="modalTitulo">
+  <div class="modal-caja">
+    <button class="modal-cerrar" id="modalCerrar" aria-label="Cerrar">&times;</button>
+
+    <div class="modal-cabeza">
+      <span class="modal-sello"><img src="img/logo.jpeg" alt="Logo de DK technology"></span>
+      <div>
+        <p class="etiqueta">Identidad de marca</p>
+        <h2 id="modalTitulo">Por qué este logo?</h2>
+      </div>
+    </div>
+
+    <p class="modal-texto">
+      <b>DK</b> son las iniciales de quienes fundamos la empresa, Dilan y Kevin.<br>
+      este logo representa la unión de nuestras ideas y habilidades para crear soluciones tecnológicas innovadoras y confiables.
+    </p>
+
+    <h3 class="modal-sub">Los colores de la página</h3>
+    <ul class="paleta">
+      <li>
+        <span class="muestra" style="background:var(--tinta)"></span>
+        <div><b>Tinta</b> <code>#101828</code>
+        <p>Azul casi negro. es la base de nuestros estilos tecnicos</p></div>
+      </li>
+      <li>
+        <span class="muestra" style="background:var(--cobalto)"></span>
+        <div><b>Cobalto</b> <code>#2340D8</code>
+        <p>Azul intenso asociado a la tecnología</p></div>
+      </li>
+      <li>
+        <span class="muestra" style="background:var(--azufre)"></span>
+        <div><b>Azul cielo</b> <code>#74A9EE</code>
+        <p>genera una claridad y energia</p></div>
+      </li>
+      <li>
+        <span class="muestra" style="background:var(--papel);border:1px solid var(--niebla)"></span>
+        <div><b>Papel</b> <code>#F4F6FA</code>
+        <p>para que el contenido se lea con comodidad.</p></div>
+      </li>
+      <p>los colores los quisimos colocar de esta manera ya que no satura o molesta la vista del usuario y convina con los colores del logo de nuestra empresa</p></div>
+    </ul>
+  </div>
+</dialog>
+
+<script>
+
+
+/* ---------- Carrusel de servicios ---------- */
+const pista = document.getElementById('pista');
+const laminas = [...pista.children];
+const puntos = document.getElementById('puntos');
+const visor = document.getElementById('visor');
+let indice = 0;
+let paginas = 1;
+
+/* Cuántas tarjetas caben completas en el visor */
+function visibles() {
+  const ancho = laminas[0].getBoundingClientRect().width;
+  const hueco = laminas.length > 1
+    ? laminas[1].offsetLeft - laminas[0].offsetLeft - ancho
+    : 0;
+  const caben = Math.floor((visor.clientWidth + hueco + 1) / (ancho + hueco));
+  return Math.min(laminas.length, Math.max(1, caben));
+}
+
+/* Un punto por cada página, no por tarjeta */
+function armarPuntos() {
+  puntos.innerHTML = '';
+  for (let i = 0; i < paginas; i++) {
+    const b = document.createElement('button');
+    b.className = 'punto-btn';
+    b.setAttribute('aria-label', 'Ver página ' + (i + 1) + ' de servicios');
+    b.addEventListener('click', () => mover(i));
+    puntos.appendChild(b);
+  }
+}
+
+function mover(i) {
+  if (i > paginas - 1) i = 0;
+  if (i < 0) i = paginas - 1;
+  indice = i;
+
+  const porPagina = visibles();
+  const primera = Math.min(indice * porPagina, laminas.length - porPagina);
+  const desplazamiento = laminas[primera].offsetLeft - laminas[0].offsetLeft;
+
+  pista.style.transform = `translateX(-${desplazamiento}px)`;
+  [...puntos.children].forEach((p, n) => p.classList.toggle('activo', n === indice));
+}
+
+function ajustar() {
+  const nuevas = Math.ceil(laminas.length / visibles());
+  if (nuevas !== paginas) {
+    paginas = nuevas;
+    armarPuntos();
+  }
+  mover(Math.min(indice, paginas - 1));
+}
+
+document.getElementById('anterior').addEventListener('click', () => mover(indice - 1));
+document.getElementById('siguiente').addEventListener('click', () => mover(indice + 1));
+
+visor.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight') { e.preventDefault(); mover(indice + 1); }
+  if (e.key === 'ArrowLeft')  { e.preventDefault(); mover(indice - 1); }
+});
+
+
+window.addEventListener('resize', ajustar);
+paginas = Math.ceil(laminas.length / visibles());
+armarPuntos();
+mover(0);
+
+/* ---------- Modal del logo ---------- */
+const modalLogo = document.getElementById('modalLogo');
+document.querySelectorAll('.marca').forEach(m => {
+  m.setAttribute('aria-haspopup', 'dialog');
+  m.addEventListener('click', e => {
+    e.preventDefault();
+    modalLogo.showModal();
+  });
+});
+document.getElementById('modalCerrar').addEventListener('click', () => modalLogo.close());
+modalLogo.addEventListener('click', e => {
+  if (e.target === modalLogo) modalLogo.close(); // clic en el fondo
+});
+
+</script>
+
+</body>
+</html>
